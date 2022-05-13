@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Домашнє завдання №9</title>
+</head>
+<body>
+<script>
+    let number = prompt("Вкажіть, будь ласка, будь-яке число (не менше 2 цифр)");
+    let result = '';
+    while (number > 10) {
+        result += number % 10 + ''
+        number = Math.floor(number/10)
+    }
+    result += number;
+    alert("Число буде таким " + result);
+</script>
+</body>
+</html>
