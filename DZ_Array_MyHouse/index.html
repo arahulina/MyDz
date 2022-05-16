@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let myHouse = {}
+    myHouse.rooms = []
+    /**
+     * Перша кімната - спальня
+     */
+    myHouse.rooms [0] = {name: 'Bedroom'}
+        let bed = {
+            material: 'wood',
+            width: '2m',
+            length: '2.4m',
+            complete_set: 'mattress'
+        }
+        myHouse.rooms[0].bed = bed
+
+        let commode = {name: 'commode',
+            material: 'wood',
+            complete_set: '4 box',
+            height: '1.2m',
+            width: '0.6m'
+        }
+            let box1 = {content: 'cosmetics'}
+            let box2 = {content: 'underwear'}
+            let box3 = {content: 'summer clothes'}
+            let box4 = {content: 'accessories'}
+        commode.boxes = [box1,box2,box3,box4]
+        myHouse.rooms[0].commode = commode
+
+        let shkaf = {name: 'Shkaf',
+            material: 'wood',
+            complete_set: 'shelfes and rackes',
+            height: '2.0m',
+            width: '1.2m'
+        }
+            let shelf1 = {content: 'sweater'}
+            let shelf2 = {content: 'shirts'}
+            let shelf3 = {content: 'skirtes'}
+            let rack1 = {content: 'jacket'}
+            let rack2 = {content: 'thousers'}
+            let rack3 = {content: 'dresses'}
+        shkaf.shelfes = [shelf1, shelf2, shelf3, rack1, rack2, rack3]
+        myHouse.rooms[0].shkaf = shkaf
+    /**
+     * Друга кімната - спальня
+     */
+    myHouse.rooms[1] = {name: 'Kitchen'}
+        let dinTable = {name: 'dinning table'}
+            let table = {
+                material: 'wood',
+                height: '1.0m',
+                width: '1.0m'}
+            let chair1 = {material: 'wood'}
+            let chair2 = {material: 'wood'}
+            let chair3 = {material: 'wood'}
+            let chair4 = {material: 'wood'}
+        dinTable.complete = [table, chair1, chair2, chair3, chair4]
+        myHouse.rooms[1].dinTable = dinTable
+
+        let fridgeFreezer = {
+            vendor: 'Samsung',
+            height: '2.0m',
+            width: '1.5m'}
+        myHouse.rooms[1].fridgeFreezer = fridgeFreezer
+
+        let kitchenSet = {description: 'furniture and appliances for cooking'}
+            let kitchenSink = {name: 'kitchenSink', material: 'stailness'}
+            let cookstore = {name: 'cookstore', vendor: 'Gorenja'}
+            let microwave = {name: 'microwave', vendor: 'Samsung'}
+            let cupboards = {name: 'cupboards', material: 'wood'}
+            let drawers = {name:'drawers', material: 'wood'}
+        kitchenSet.complete = [kitchenSink,cookstore,microwave,cupboards,drawers]
+        myHouse.rooms[1].kitchenSet = kitchenSet
+    /**
+     * Третя кімната - Ванна кімната
+     */
+    myHouse.rooms[2] = {name: 'Bathroom'}
+    let bath = {name:'bath', vendor: 'Cersanit', color: 'white'}
+    myHouse.rooms[2].bath = bath
+    let toilet = {name:'toilet', vendor: 'Cersanit', color: 'white'}
+    myHouse.rooms[2].toilet = toilet
+    let sink = {name:'sink', vendor: 'Cersanit', color: 'white'}
+    myHouse.rooms[2].sink = sink
+    let mirror = {name:'mirror', material: 'glass', form: 'circle'}
+    myHouse.rooms[2].mirror = mirror
+    let bathShelf = {name:'bathShelf', vendor: 'Cersanit', color: 'white'}
+        let towels = {name: 'Towels',material: 'fringe', color: 'white'}
+        let soap = {name: 'Soap', vendor: 'Dove', aroma: 'fruits'}
+        let toiletPaper = {name:'Toilet Paper',vendor: 'Ruta', color: 'white'}
+    bathShelf.complete = [towels,soap,toiletPaper]
+    myHouse.rooms[2].bathShelf = bathShelf
+
+    console.log(myHouse)
+</script>
+</body>
+</html>
