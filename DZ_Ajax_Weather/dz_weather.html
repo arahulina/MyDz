@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather</title>
+<style>
+  table td {
+    padding: 5px;
+    border: mediumslateblue 3px solid;
+  }
+  p {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+<p id="data"></p>
+<table>
+  <tr>
+    <td>Місто</td>
+    <td id="cityName"></td>
+  </tr>
+  <tr>
+    <td>Температура, ℃</td>
+    <td id="temp"></td>
+  </tr>
+  <tr>
+    <td>Температура, ℃ (відчувається як)</td>
+    <td id="feels_like"></td>
+  </tr>
+  <tr>
+    <td>Хмарність</td>
+    <td id="clouds"></td>
+  </tr>
+  <tr>
+    <td>Вологість, %</td>
+    <td id="humidity"></td>
+  </tr>
+  <tr>
+    <td>Швидкість вітру, м/с</td>
+    <td id="winds"></td>
+  </tr>
+  <tr>
+    <td>Пориви вітру, м/с</td>
+    <td id="gust"></td>
+  </tr>
+
+</table>
+<script>
+  let date = new Date().toDateString();
+  document.getElementById('data').innerText = date
+  fetch('https://api.openweathermap.org/data/2.5/weather?lat=46.9635&lon=31.9702&appid=eae876bbdde5866eff184107e2daa9d3&units=metric&lang=ua')
+          .then(response => {
+            console.log(response)
+            return response.json()
+          })
+          .then(response => {
+            console.log(response)
+            document.getElementById('cityName').innerText = response.name
+            document.getElementById('temp').innerText = response.main.temp
+            document.getElementById('feels_like').innerText = response.main.feels_like
+            document.getElementById('clouds').innerText = response.weather[0].description
+            document.getElementById('humidity').innerText = response.main.humidity
+            document.getElementById('winds').innerText = response.wind.speed
+            document.getElementById('gust').innerText = response.wind.gust
+          })
+          .catch(err=> {
+            console.log('Error:')
+            console.log(err)
+          })
+</script>
+</body>
+</html>
