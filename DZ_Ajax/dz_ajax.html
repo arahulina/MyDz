@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    #btnAnswer {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <label for="btnAnswer">Быть или не быть, вот в чем вопрос?</label>
+  <button id="btnAnswer">Хочешь узнать ответ, быстрее жми вот сюда</button>
+  <div id="answer"></div>
+
+<script>
+  let mainEl = document.getElementById('answer')
+
+  /**
+   * Построить фотографию ответа на вопрос
+   * @param answer
+   */
+  function buildAnswer(answer) {
+    let img = document.createElement('img')
+        if (answer['image'])
+      img.src = answer['image']
+    mainEl.innerHTML = ''
+    mainEl.appendChild(img)
+  }
+
+  /**
+   * Получение данных о фото с ответом на вопрос
+   */
+  function apiGetRandomAnswer() {
+    fetch('https://yesno.wtf/api')
+            .then( res => res.json())
+            .then( answer => {
+              console.log(answer)
+              buildAnswer(answer)
+
+            })
+            .catch(err => {
+              console.log('Err')
+              console.log(err)
+            })
+  }
+
+  document.getElementById('btnAnswer').onclick = function () {
+    apiGetRandomAnswer()
+  }
+
+</script>
+</body>
+</html>
