@@ -2,16 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <title>Be or not to be</title>
   <style>
     #btnAnswer {
-      margin-bottom: 10px;
+      margin: 10px 0;
+      background-color: darkmagenta;
+      color: aliceblue;
+      text-align: center;
+    }
+    #question  {
+      position: relative;
+      left: 50%;
+      margin: 50px 0 0 -125px;
+    }
+    #answer {
+      width: 500px;
+      height: 500px;
+      position: relative;
+      left: 35%;
     }
   </style>
 </head>
 <body>
-  <label for="btnAnswer">Быть или не быть, вот в чем вопрос?</label>
-  <button id="btnAnswer">Хочешь узнать ответ, быстрее жми вот сюда</button>
+  <div id="question">
+    <label for="btnAnswer">Быть или не быть, вот в чем вопрос? </label> <br>
+    <button id="btnAnswer">Хочешь узнать ответ, быстрее жми вот сюда</button>
+  </div>
   <div id="answer"></div>
 
 <script>
