@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>One Contact Form</title>
+</head>
+<body>
+<main>
+    <form>
+        <label><input type="text" id="typeNumber" oninput="this.value=this.value.replace(/[^a-zA-Z]/g,'');"></label>
+        <label><input type="text" id="Number" onkeypress="return (event.charCode >= 48 && event.charCode <= 57 && /^\d{0,3}$/.test(this.value));"></label>
+        <label><input type="button" id="btnAddContact" value="+"></label>
+        <label><input type="button" id="btnDelContact" value="-"></label>
+    </form>
+    <ul id="lstContact">
+    </ul>
+</main>
+<script>
+    let contact = []
+    let lstContact = document.getElementById('lstContact')
+    let typeNumber = document.getElementById('typeNumber')
+    let Number = document.getElementById("Number")
+
+    /**
+     * Функція побудови списку інформації про контакт
+     */
+    function buildContactList(){
+        lstContact.innerHTML = "";
+        for(let i=0; i < contact.length; i++){
+            let li = document.createElement("li")
+            let span = document.createElement("span")
+            span.innerText = contact[i]
+            li.appendChild(span)
+            lstContact.appendChild(li)
+        }
+    }
+
+    /**
+     * Метод додавання елемента в масив
+     */
+    document.getElementById("btnAddContact").onclick = function (){
+        /**
+         * Перевірка наявності введення даних
+         */
+        if(Number.value.length === 0){
+            alert("Enter the number!")
+            console.log("String is empty")
+            return
+        }
+        if(typeNumber.value.length === 0){
+            alert("What kind of number?")
+            console.log("String is empty - kind of number")
+            return
+        }
+        contact.push(typeNumber.value)
+        contact.push(Number.value)
+        /**
+         * Обнулення рядків
+         * @type {string}
+         */
+        Number.value = ""
+        typeNumber.value = ""
+        buildContactList()
+    }
+
+    /**
+     * Метод видалення елемента з масиву
+     */
+    document.getElementById("btnDelContact").onclick = function (){
+        contact.pop()
+        contact.pop()
+        buildContactList()
+    }
+
+
+</script>
+</body>
+</html>
