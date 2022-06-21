@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Домашнє завдання №10</title>
+</head>
+<body>
+<script>
+  let date = prompt('Введіть дату в форматі - день-місяць-рік ');
+  date = date.split('-');
+  let oldDate = new Date(date[2], date[1]-1, date[0]);
+  oldDate.setDate(oldDate.getDate()+1);
+  alert(oldDate);
+</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Домашнє завдання №7</title>
+</head>
+<body>
+<script>
+    let amount = prompt('Введіть суму, на яку плануєте зробити закупку (в доларах):');
+    if (amount >=200 && amount < 300)
+        alert('До сплати: ' + amount/100*97 + '$ та 3% знижки');
+    else if (amount >=300 && amount < 500)
+        alert('До сплати: ' + amount/100*95 + '$ та 5% знижки');
+    else if (amount >=500)
+        alert('До сплати: ' + amount/100*93 + '$ та 7% знижки');
+</script>
+</body>
+</html>
