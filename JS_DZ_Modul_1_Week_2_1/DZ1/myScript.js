@@ -1,6 +1,7 @@
 /**
  * рішення завдання №1
  */
+
 let result = document.getElementById("result")
 
 document.getElementById("btnStart").onclick = function () {
