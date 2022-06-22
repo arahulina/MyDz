@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <form>
+            <div class="mb-3">
+                <label for="number" class="form-label">Enter number</label>
+                <input type="text" class="form-control" id="number">
+            </div>
+            <button type="button" class="btn btn-primary" id="btnStart">Start</button>
+        </form>
+    </div>
+    <div class="row">
+        <div id="result"></div>
+    </div>
+</div>
+<script>
+    let result = document.getElementById('result');
+    document.getElementById("btnStart").onclick = function() {
+        let number = document.getElementById("number").value
+        console.log(number.length)
+        result.innerText="The length of number = "+number.length
+    }
+</script>
+</body>
+</html>
