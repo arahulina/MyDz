@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 700px;
+            height: 700px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <canvas id="myChart" width="400" height="400"></canvas>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js" integrity="sha512-sW/w8s4RWTdFFSduOTGtk4isV1+190E/GghVffMA9XczdJ2MDzSzLEubKAs5h0wzgSJOQTRYyaz73L3d6RtJSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    fetch('/api/products')
+        .then(res => res.json())
+        .then(data => {
+            console.log(data)
+            let names = []
+            let profites = []
+            for (let i = 0; i < data.length; i++) {
+                names.push(data[i].name)
+                profites.push(data[i].profite)
+            }
+            const ctx = document.getElementById('myChart').getContext('2d');
+            const myChart = new Chart(ctx, {
+                type: 'polarArea',
+                data: {
+                    labels: names,
+                    datasets: [{
+                        label: '# of Votes',
+                        data: profites,
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        })
+        .catch(err=> {
+            console.log('Error')
+            console.log(err)
+        })
+
+
+</script>
+</body>
+</html>
