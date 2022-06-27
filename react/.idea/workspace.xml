@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8eee68f7-9516-4981-a0a4-af861f178640" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../DZ_Express_CRUD/controllers/fruitControllers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DZ_Express_CRUD/lib/guid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DZ_Express_CRUD/routes/fruits.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Express/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Express/routes/users.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/guid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1906/22_backStudent/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1906/22_backStudent/.idea/22_backStudent.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1906/22_backStudent/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1906/22_backStudent/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1906/22_backStudent/.idea/runConfigurations/bin_www.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Express/.idea/runConfigurations/bin_www.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1906/22_backStudent/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1906/22_backStudent/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1906/22_backStudent/bin/www" beforeDir="false" afterPath="$PROJECT_DIR$/../DZ_Express_CRUD/bin/www" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1906/22_backStudent/config/mongo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1906/22_backStudent/controllers/breadController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1906/22_backStudent/controllers/flatController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1906/22_backStudent/controllers/productController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1906/22_backStudent/controllers/studentsController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1906/22_backStudent/controllers/studentsController_array.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1906/22_backStudent/controllers/tagController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1906/22_backStudent/lib/guid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1906/22_backStudent/models/products.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1906/22_backStudent/models/students.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1906/22_backStudent/models/tags.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1906/22_backStudent/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Express/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1906/22_backStudent/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../DZ_Express_CRUD/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1906/22_backStudent/public/bread.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1906/22_backStudent/public/flat.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1906/22_backStudent/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../DZ_Express_CRUD/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1906/22_backStudent/public/products.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1906/22_backStudent/public/students.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1906/22_backStudent/public/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../DZ_Express_CRUD/public/stylesheets/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1906/22_backStudent/public/tags.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1906/22_backStudent/routes/bread.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1906/22_backStudent/routes/flat.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1906/22_backStudent/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../DZ_Express_CRUD/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1906/22_backStudent/routes/products.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1906/22_backStudent/routes/students.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1906/22_backStudent/routes/tags.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1906/22_backStudent/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/../DZ_Express_CRUD/routes/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1906/22_backStudent/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2006_first_react/.idea/2006_first_react.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2006_first_react/src/components/Tags/TagsList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2006_first_react/src/components/footer/AnraFooter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2006_first_react/src/components/header/AnraHeader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Api_Fox/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ_Schedule_Profit/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ_Schedule_Profit/javaScript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Express/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Express/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back_express/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back_express/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back_express/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back_express/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back_express/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../DZ_Express_CRUD/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back_express/bin/www" beforeDir="false" afterPath="$PROJECT_DIR$/../Express/bin/www" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back_express/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../DZ_Express_CRUD/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back_express/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Express/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back_express/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back_express/public/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Express/public/stylesheets/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back_express/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Express/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/.idea/front.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Express/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/.idea/vcs.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2BAOYL6njqy6KMTSUUS8vHazgb9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/WebstormProjects&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8eee68f7-9516-4981-a0a4-af861f178640" name="Changes" comment="" />
+      <created>1656345468745</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1656345468745</updated>
+      <workItem from="1656345470411" duration="28000" />
+      <workItem from="1656345511983" duration="42000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
