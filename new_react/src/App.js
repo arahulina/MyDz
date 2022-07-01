@@ -1,13 +1,13 @@
 import AnraFooter from "./components/Footer/AnraFooter";
 import AnraHeader from "./components/Header/AnraHeader";
-import TagsList from "./components/Tags/TagsList";
+import FormSignUp from "./components/Forms/Auth/FormSignUp";
 
 
 function App() {
   return (
       <div className="App">
         <AnraHeader></AnraHeader>
-        <TagsList></TagsList>
+        <FormSignUp></FormSignUp>
         <AnraFooter></AnraFooter>
       </div>
   );
