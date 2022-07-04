@@ -5,7 +5,7 @@ import FormSignUp from "./components/Forms/Auth/FormSignUp";
 
 function App() {
   return (
-      <div className="App">
+      <div className="App container">
         <AnraHeader></AnraHeader>
         <FormSignUp></FormSignUp>
         <AnraFooter></AnraFooter>

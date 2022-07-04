@@ -20,7 +20,7 @@ class AnraInputEmail extends React.Component {
         let email = ev.target.value
         //console.log(pass);
         let err = []
-        //Регулярний вираз на наявність цифр
+        //Регулярний вираз на відповідність формату
         let isRe = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/
 
         if(!isRe.test(email)){
@@ -39,9 +39,22 @@ class AnraInputEmail extends React.Component {
     }
 
     render() {
+        let err = ''
+        if(!this.state.isValid) {
+            err = (
+                <ul>
+                    { this.state.err.map( e => {
+                        return(
+                            <li> {e} </li>
+                        )
+                    })}
+                </ul>
+            )
+        }
+
         let label = ''
 
-        if(this.props.label){
+        if (this.props.label){
             label = (<label>{this.props.label}</label>)
         }
 
@@ -49,6 +62,7 @@ class AnraInputEmail extends React.Component {
             <div>
                 {label}
                 <input type="email" onChange={this.onChange.bind(this)}/>
+                {err}
             </div>
         )
     }
