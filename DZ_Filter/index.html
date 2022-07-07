@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<style>
+
+    body {
+        font-family: "Cambria Math";
+    }
+
+    body li{
+        list-style-type: none;
+        display: flex;
+    }
+    #products ul, #filters li {
+        display: inline-flex;
+    }
+    #products li{
+        margin-right: 25px;
+    }
+    #filters li{
+        padding: 0 10px 0 0;
+    }
+    p {
+        font-style: italic;
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    #products img {
+        height: 100px;
+        width: 100px;
+    }
+
+
+</style>
+
+</head>
+<body>
+<aside id="filters">
+
+</aside>
+<main id="products">
+
+</main>
+
+<script src="../lib/guid.js"></script>
+
+<script>
+    let materials = ['Ситець', 'Фланель', 'Муслін', 'Непромокашка']
+    let colors = ['Тварини', 'Зірки', 'Кактус', 'Молоко', 'Повітряна куля']
+    let sizes = ['100x80cм', '90x80cм', '50x75cм']
+
+    let products = [
+        {
+            id: generateUUID(),
+            name: "Пелюшка",
+            material: materials[0],
+            color: colors[0],
+            size: sizes[1],
+            img: "images/sitec_animal.jpg"
+        },
+        {
+            id: generateUUID(),
+            name: "Пелюшка",
+            material: materials[0],
+            color: colors[1],
+            size: sizes[1],
+            img: ""
+        },
+        {
+            id: generateUUID(),
+            name: "Пелюшка",
+            material: materials[0],
+            color: colors[2],
+            size: sizes[1],
+            img: ""
+        },
+        {
+            id: generateUUID(),
+            name: "Пелюшка",
+            material: materials[1],
+            color: colors[1],
+            size: sizes[0],
+            img: ""
+        },
+        {
+            id: generateUUID(),
+            name: "Пелюшка",
+            material: materials[1],
+            color: colors[3],
+            size: sizes[0],
+            img: ""
+        },
+        {
+            id: generateUUID(),
+            name: "Пелюшка",
+            material: materials[1],
+            color: colors[0],
+            size: sizes[0],
+            img: ""
+        },
+        {
+            id: generateUUID(),
+            name: "Пелюшка",
+            material: materials[2],
+            color: colors[3],
+            size: sizes[0],
+            img: ""
+        },
+        {
+            id: generateUUID(),
+            name: "Пелюшка",
+            material: materials[2],
+            color: colors[2],
+            size: sizes[0],
+            img: ""
+        },
+        {
+            id: generateUUID(),
+            name: "Пелюшка",
+            material: materials[3],
+            color: colors[4],
+            size: sizes[2],
+            img: ""
+        },
+        {
+            id: generateUUID(),
+            name: "Пелюшка",
+            material: materials[3],
+            color: colors[1],
+            size: sizes[2],
+            img: ""
+        },
+    ]
+
+    /**
+     * Масив для передачі даних про фільтрацію
+     */
+    let filteredBy = {}
+    filteredBy['materialMany'] = []
+    filteredBy['colorMany'] = []
+    filteredBy['sizeMany'] = []
+
+    function renderFilters() {
+        let aMaterials = document.getElementById("filters")
+        let ulMat = document.createElement("ul")
+        let pMat = document.createElement("p")
+        pMat.innerText = 'Матеріали'
+        ulMat.appendChild(pMat)
+
+        materials.map(el=> {
+
+            let li = document.createElement("li")
+            let inp = document.createElement("input")
+            inp.type = 'checkbox'
+            inp.name = 'materials'
+            inp.value = el
+            inp.onchange = (ev) => {
+
+                let el = filteredBy['materialMany'].findIndex(f => {
+                    return f === ev.target.value})
+                console.log(el)
+                if (el !== -1) {
+                    filteredBy['materialMany'].splice(el,1)
+                } else {
+                    filteredBy['materialMany'].push(ev.target.value)
+                }
+                console.log(filteredBy)
+                renderProducts()
+            }
+
+            let label = document.createElement("label")
+            label.innerText = el
+
+            li.appendChild(inp)
+            li.appendChild(label)
+            ulMat.appendChild(li)
+        })
+        aMaterials.appendChild(ulMat)
+
+        let aColors = document.getElementById("filters")
+        let ulColor = document.createElement("ul")
+        let pColor = document.createElement("p")
+        pColor.innerText = 'Забарвлення'
+        ulColor.appendChild(pColor)
+
+        colors.map(el=> {
+
+            let li = document.createElement("li")
+            let inp = document.createElement("input")
+            inp.type = 'checkbox'
+            inp.name = 'colors'
+            inp.value = el
+            inp.onchange = (ev) => {
+                let el = filteredBy['colorMany'].findIndex(f => {
+                    return f === ev.target.value})
+                console.log(el)
+                if (el !== -1){
+                    filteredBy['colorMany'].splice(el,1)
+                } else {
+                    filteredBy['colorMany'].push(ev.target.value)
+                }
+                console.log(filteredBy)
+                renderProducts()
+            }
+
+            let label = document.createElement("label")
+            label.innerText = el
+
+            li.appendChild(inp)
+            li.appendChild(label)
+
+            ulColor.appendChild(li)
+        })
+        aColors.appendChild(ulColor)
+
+        let aSizes = document.getElementById("filters")
+        let ulSize = document.createElement("ul")
+        let pSize = document.createElement("p")
+        pSize.innerText = 'Розміри'
+        ulSize.appendChild(pSize)
+
+        sizes.map(el=> {
+
+            let li = document.createElement("li")
+            let inp = document.createElement("input")
+            inp.type = 'checkbox'
+            inp.name = 'sizes'
+            inp.value = el
+            inp.onchange = (ev) => {
+                let el = filteredBy['sizeMany'].findIndex(f => {
+                    return f === ev.target.value})
+                console.log(el)
+                if (el !== -1){
+                    filteredBy['sizeMany'].splice(el,1)
+                } else {
+                    filteredBy['sizeMany'].push(ev.target.value)
+                }
+                console.log(filteredBy)
+                renderProducts()
+            }
+
+            let label = document.createElement("label")
+            label.innerText = el
+
+            li.appendChild(inp)
+            li.appendChild(label)
+
+            ulSize.appendChild(li)
+        })
+        aSizes.appendChild(ulSize)
+
+    }
+    renderFilters()
+
+    /**
+     * Побудова списку
+     */
+    function renderProducts() {
+        let main = document.getElementById("products")
+        let ul = document.createElement("ul")
+        products.map(product => {
+
+            if (filteredBy['materialMany'].length > 0) {
+                let inFilter = false
+                for(let i = 0; i < filteredBy['materialMany'].length; i++) {
+                    if (product.material === filteredBy['materialMany'][i]) {
+                        inFilter = true
+                        break
+                    }
+                }
+                if (!inFilter) return
+            }
+            if (filteredBy['colorMany'].length > 0) {
+                let inFilter = false
+                for(let i = 0; i < filteredBy['colorMany'].length; i++) {
+                    if (product.color === filteredBy['colorMany'][i]) {
+                        inFilter = true
+                        break
+                    }
+                }
+                if (!inFilter) return
+            }
+            if (filteredBy['sizeMany'].length > 0) {
+                let inFilter = false
+                for(let i = 0; i < filteredBy['sizeMany'].length; i++) {
+                    if (product.size === filteredBy['sizeMany'][i]) {
+                        inFilter = true
+                        break
+                    }
+                }
+                if (!inFilter) return
+            }
+
+            let li = document.createElement("li")
+            li.dataset.id = product.id
+            li.innerText = product.img + "" + product.name + " " + product.size + " " + product.material + " " + product.color
+            ul.appendChild(li)
+        })
+        main.innerHTML = ''
+        main.appendChild(ul)
+    }
+    renderProducts()
+
+</script>
+</body>
+</html>
