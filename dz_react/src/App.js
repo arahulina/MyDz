@@ -1,14 +1,14 @@
-import AnraFooter from "./components/Footer/AnraFooter";
+import './App.css';
+import CatsMain from "./components/Cats/CatsMain";
 import AnraHeader from "./components/Header/AnraHeader";
-import PhoneBook from "./components/PhoneBook/PhoneBook";
-import FormSignUp from "./components/Forms/Auth/FormSignUp";
+import AnraFooter from "./components/Footer/AnraFooter";
 
 
 function App() {
   return (
       <div className="App container">
         <AnraHeader></AnraHeader>
-        <PhoneBook></PhoneBook>
+        <CatsMain></CatsMain>
         <AnraFooter></AnraFooter>
       </div>
   );

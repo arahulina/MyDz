@@ -1,0 +1,12 @@
+.clearfix {
+    overflow: auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.card {
+    margin: 10px;
+}
