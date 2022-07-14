@@ -4,37 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c2dbab0-2e21-4f76-9636-42e86835bfee" name="Changes" comment="">
+    <list default="true" id="0c2dbab0-2e21-4f76-9636-42e86835bfee" name="Changes" comment="DZ_React">
       <change afterPath="$PROJECT_DIR$/../DZ_JQuery_Validation/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dz_react.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/logo192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/logo512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Cats/CatsAdd.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Cats/CatsCSS.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Cats/CatsItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Cats/CatsMain.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Footer/AnraFooter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/AnraHeader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reportWebVitals.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/setupTests.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../new_react/src/components/KinoKrad/KinoKradAdd.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../new_react/src/components/KinoKrad/KinoKradHome.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../new_react/src/components/KinoKrad/KinoKradItem.js" afterDir="false" />
@@ -42,7 +13,6 @@
       <change afterPath="$PROJECT_DIR$/../new_react/src/components/PhoneBook/Contact.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../new_react/src/components/PhoneBook/ContactAdd.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../new_react/src/components/PhoneBook/PhoneBook.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../new_react/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../new_react/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../react/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -114,8 +84,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1657818617508</updated>
-      <workItem from="1657818618711" duration="9352000" />
+      <workItem from="1657818618711" duration="9729000" />
     </task>
+    <task id="LOCAL-00001" summary="DZ_React">
+      <created>1657829058356</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1657829058356</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,5 +112,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="DZ_React" />
+    <option name="LAST_COMMIT_MESSAGE" value="DZ_React" />
   </component>
 </project>
