@@ -15,3 +15,12 @@ const contactSchema = new mongoose.Schema({
 });
 
 module.exports = mongoose.model("contacts", contactSchema);
+
+// let express = require('express');
+// let router = express.Router();
+//
+// let cContacts = require('./../controllers/contactController')
+//
+// router.get('/', cContacts.index);
+//
+// module.exports = router;

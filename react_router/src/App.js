@@ -9,6 +9,7 @@ import ContactPage from "./pages/ContactPage"
 import Navigation from "./components/design/Navigation";
 import PageHeader from "./components/design/PageHeader";
 import Footer from "./components/design/Footer";
+import AuthPage from "./pages/AuthPage"
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
                         <Route path="/about" element={<AboutPage />} />
                         <Route path="/blog" element={<PostsPage />} />
                         <Route path="/contact" element={<ContactPage />} />
+                        <Route path="/auth" element={<AuthPage />} />
                         <Route path="*" element={<ErrorPage />} />
                       </Routes>
                     </div>

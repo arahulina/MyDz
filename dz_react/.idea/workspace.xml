@@ -5,15 +5,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c2dbab0-2e21-4f76-9636-42e86835bfee" name="Changes" comment="DZ_React">
-      <change afterPath="$PROJECT_DIR$/../DZ_JQuery_Validation/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../new_react/src/components/KinoKrad/KinoKradAdd.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../new_react/src/components/KinoKrad/KinoKradHome.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../new_react/src/components/KinoKrad/KinoKradItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../new_react/src/components/KinoKrad/kinokrad.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../new_react/src/components/PhoneBook/Contact.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../new_react/src/components/PhoneBook/ContactAdd.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../new_react/src/components/PhoneBook/PhoneBook.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mamontenok/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mamontenok/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mamontenok/.idea/mamontenok.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mamontenok/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mamontenok/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mamontenok/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mamontenok/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mamontenok/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mamontenok/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mamontenok/public/assets/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mamontenok/public/assets/img/about-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mamontenok/public/assets/img/contact-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mamontenok/public/assets/img/home-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mamontenok/public/assets/img/post-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mamontenok/public/assets/img/post-sample-image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mamontenok/public/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mamontenok/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mamontenok/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mamontenok/public/js/scripts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mamontenok/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mamontenok/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mamontenok/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mamontenok/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mamontenok/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mamontenok/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mamontenok/src/App.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mamontenok/src/components/design/Footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mamontenok/src/components/design/Navigation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mamontenok/src/components/design/PageHeader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mamontenok/src/components/products/ProductItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mamontenok/src/components/products/ProductsMain.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mamontenok/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mamontenok/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mamontenok/src/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mamontenok/src/pages/AboutPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mamontenok/src/pages/ContactPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mamontenok/src/pages/ErrorPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mamontenok/src/pages/HomePage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mamontenok/src/pages/ProductsPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mamontenok/src/reportWebVitals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mamontenok/src/setupTests.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_router/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../react_router/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_router/src/components/design/PageHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react_router/src/components/design/PageHeader.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,25 +77,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/WebstormProjects&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/WebstormProjects/dz_react",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
@@ -86,6 +121,7 @@
       <updated>1657818617508</updated>
       <workItem from="1657818618711" duration="9818000" />
       <workItem from="1658060619547" duration="46000" />
+      <workItem from="1658943506556" duration="2179000" />
     </task>
     <task id="LOCAL-00001" summary="DZ_React">
       <created>1657829058356</created>

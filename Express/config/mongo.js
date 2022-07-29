@@ -1,7 +1,7 @@
 // Подключить модуль работы с базами данных
 const mongoose = require("mongoose");
 
-//const  MONGO_URI  = 'mongodb+srv://F12ReactRouter:80933038185@cluster0.wecny.mongodb.net/?retryWrites=true&w=majority';
+//const  MONGO_URI  = 'mongodb+srv://F12ReactRouter:80933038185@cluster0.wecny.mongodb.net/F12?retryWrites=true&w=majority';
 
 // Стандартная система подключения к базе банных
 exports.connect = () => {

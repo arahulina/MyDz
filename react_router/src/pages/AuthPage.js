@@ -1,7 +1,8 @@
 import React from "react"
+import FormSignUp from "../components/Forms/Auth/FormSignUp";
 
 
-class AboutPage extends React.Component {
+class AuthPage extends React.Component {
 
     constructor(props) {
         super(props);
@@ -10,14 +11,14 @@ class AboutPage extends React.Component {
     componentDidMount() {
         document.getElementById("pageHeaderBg").style.backgroundImage = "url('/assets/img/about-bg.jpg')"
         document.getElementById("pageHeaderBg").style.transition = "background-image 1s"
-        document.getElementById("pageHeaderTitle").innerText = " About Me"
-        document.getElementById("pageHeaderSlogan").innerText = "This is what I do."
+        document.getElementById("pageHeaderTitle").innerText = " Authorization"
+        document.getElementById("pageHeaderSlogan").innerText = "You are one of us"
     }
 
     render() {
         return (
             <>
-                AboutPage
+                <FormSignUp></FormSignUp>
             </>
         )
     }
@@ -25,4 +26,4 @@ class AboutPage extends React.Component {
 
 }
 
-export default AboutPage;
+export default AuthPage;
