@@ -18,6 +18,7 @@ class Navigation extends React.Component {
                             <li className="nav-item"><Link className="nav-link px-lg-3 py-3 py-lg-4" to="/about">About</Link></li>
                             <li className="nav-item"><Link className="nav-link px-lg-3 py-3 py-lg-4" to="/blog">Posts</Link></li>
                             <li className="nav-item"><Link className="nav-link px-lg-3 py-3 py-lg-4" to="/contact">Contact</Link></li>
+                            <li className="nav-item"><Link className="nav-link px-lg-3 py-3 py-lg-4" to="/auth">Auth</Link></li>
                         </ul>
                     </div>
                 </div>
