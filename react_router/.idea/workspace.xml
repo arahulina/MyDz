@@ -5,79 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4337f779-dbe5-424d-a402-2e0717b48880" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../new_project/back/controller/productController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../new_project/back/models/products.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../new_project/back/public/product.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../new_project/back/routes/product.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../new_project/front/public/assets/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../new_project/front/public/assets/img/about-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../new_project/front/public/assets/img/contact-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../new_project/front/public/assets/img/home-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../new_project/front/public/assets/img/post-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../new_project/front/public/assets/img/post-sample-image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../new_project/front/public/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../new_project/front/public/js/scripts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../new_project/front/src/components/design/Footer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../new_project/front/src/components/design/Navigation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../new_project/front/src/components/design/PageHeader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../new_project/front/src/components/products/ProductItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../new_project/front/src/components/products/ProductsMain.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../new_project/front/src/pages/AboutPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../new_project/front/src/pages/AuthPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../new_project/front/src/pages/ContactPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../new_project/front/src/pages/ErrorPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../new_project/front/src/pages/HomePage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../new_project/front/src/pages/ProductsPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dz_react/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dz_react/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mamontenok/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mamontenok/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mamontenok/.idea/mamontenok.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mamontenok/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mamontenok/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mamontenok/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mamontenok/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mamontenok/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mamontenok/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mamontenok/public/assets/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mamontenok/public/assets/img/about-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mamontenok/public/assets/img/contact-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mamontenok/public/assets/img/home-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mamontenok/public/assets/img/post-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mamontenok/public/assets/img/post-sample-image.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mamontenok/public/css/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mamontenok/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mamontenok/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mamontenok/public/js/scripts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mamontenok/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mamontenok/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mamontenok/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mamontenok/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mamontenok/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mamontenok/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mamontenok/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mamontenok/src/components/design/Footer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mamontenok/src/components/design/Navigation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mamontenok/src/components/design/PageHeader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mamontenok/src/components/products/ProductItem.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mamontenok/src/components/products/ProductsMain.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mamontenok/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mamontenok/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mamontenok/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mamontenok/src/pages/AboutPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mamontenok/src/pages/ContactPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mamontenok/src/pages/ErrorPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mamontenok/src/pages/HomePage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mamontenok/src/pages/ProductsPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mamontenok/src/reportWebVitals.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mamontenok/src/setupTests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../new_project/back/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../new_project/back/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../new_project/back/middlewares/AuthMiddleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/../new_project/back/middlewares/AuthMiddleware.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../new_project/front/.idea/shelf/Uncommitted_changes_before_Update_at_31_07_2022_23_36_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../new_project/front/.idea/shelf/Uncommitted_changes_before_Update_at_31_07_2022_23_36__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../new_project/front/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../new_project/front/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../new_project/front/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../new_project/front/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../new_project/front/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../new_project/front/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../new_project/front/src/components/auth/Forms/FormLogin.js" beforeDir="false" afterPath="$PROJECT_DIR$/../new_project/front/src/components/auth/Forms/FormLogin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../new_project/front/src/components/auth/Forms/FormRegister.js" beforeDir="false" afterPath="$PROJECT_DIR$/../new_project/front/src/components/auth/Forms/FormRegister.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
