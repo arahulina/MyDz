@@ -32,6 +32,10 @@ require("./config/mongo").connect();
 const auth = require('./routes/auth')
 app.use('/api/auth', auth)
 
+// Для работы с продуктами
+let productRouter = require('./routes/product')
+app.use('/api/products', productRouter)
+
 // Подготовка модуля к работе
 module.exports = app;
 

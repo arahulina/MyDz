@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div>
+    <label for="txtFind"><input type="text" name="txtFind" id="txtFind"></label>
+    <label for="btnFind"><input type="button" value="Find" id="btnFind"></label>
+</div>
+<div id="main">
+    <h3>Перелік товарів</h3>
+</div>
+
+<script>
+
+    let products = []
+    let mainDiv = document.getElementById("main")
+
+    function renderProductList() {
+        mainDiv.innerHTML = ''
+        let ul = document.createElement('ul')
+        products.map(product => {
+            let li = document.createElement('li')
+            li.dataset.id = product._id
+            li.innerText = product.name
+
+            let span = document.createElement('span')
+            // span.dataset.id = product._id
+            span.innerText = ' - '
+            span.onclick = function (el) {
+                let _id = el.target.parentNode.dataset.id
+                fetch('/api/product/' + _id, {
+                    method: 'DELETE'
+                })
+                    .then( res=> {
+                        if(res.status !== 200){
+                            throw 'Server Error'
+                        } else {
+                            getProducts()
+                        }
+                    })
+                    .catch(err => {
+                        console.log(err)
+                    })
+            }
+            li.appendChild(span)
+            ul.append(li)
+        })
+        mainDiv.append(ul)
+
+    }
+
+    function getProducts(){
+        fetch('/api/product')
+            .then(res=> res.json())
+            .then(pr=> {
+                console.log('get')
+                console.log(pr)
+                products = pr
+                renderProductList()
+            })
+            .catch(err=> {
+                console.log('Err')
+                console.log(err)
+            })
+    }
+    getProducts()
+
+
+    document.getElementById("btnFind").onclick = function (el) {
+        let bodyToFind = {
+            txtFind: document.getElementById("txtFind").value
+        }
+        fetch('/api/product/find', {
+            method: 'POST',
+                headers: {
+                'Content-Type': 'application/json'
+                // 'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: JSON.stringify(bodyToFind)
+        })
+            .then(res=> res.json())
+            .then(pr=> {
+                console.log('get')
+                console.log(pr)
+                products = pr
+                renderProductList()
+            })
+            .catch(err=> {
+                console.log('Err')
+                console.log(err)
+            })
+    }
+
+
+
+</script>
+</body>
+</html>

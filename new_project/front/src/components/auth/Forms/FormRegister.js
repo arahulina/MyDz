@@ -78,7 +78,7 @@ class FormRegister extends React.Component {
                     </div>
                     <div className="form-floating">
                         <input onChange={this.onChange}  name="passwordC" className="form-control" id="phone" type="tel" placeholder="Enter your password..."/>
-                        <label htmlFor="passwordC">Password</label>
+                        <label htmlFor="passwordC">PasswordC</label>
                         <div className="invalid-feedback" id="phone_required">A password is required.
                         </div>
                     </div>

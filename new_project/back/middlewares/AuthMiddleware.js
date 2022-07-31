@@ -1,7 +1,7 @@
 jwt = require('jsonwebtoken')
 
 exports.auth = function (request, response, next){
-    if (rqguest.headers.authorization){
+    if (reguest.headers.authorization){
         jwt.verify(
             request.headers.authorization.split(' '),
             process.env.JWT_KEY,
