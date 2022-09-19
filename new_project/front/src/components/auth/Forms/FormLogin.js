@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 
 class FormLogin extends React.Component {
@@ -73,7 +73,8 @@ class FormLogin extends React.Component {
                     <div className="form-floating">
                         <input onChange={this.onChange}  name="password" className="form-control" id="phone" type="tel" placeholder="Enter your password..."/>
                         <label htmlFor="password">Password</label>
-                        <div className="invalid-feedback" id="phone_required">A password is required.</div>
+                        <div className="invalid-feedback" id="phone_required">A password is required.
+                        </div>
                     </div>
 
                     <div className="d-none" id="submitErrorMessage">

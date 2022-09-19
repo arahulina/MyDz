@@ -19,6 +19,7 @@ class AuthPage extends React.Component {
         return (
             <>
                 <FormRegister></FormRegister>
+                <hr/>
                 <FormLogin></FormLogin>
             </>
         )
