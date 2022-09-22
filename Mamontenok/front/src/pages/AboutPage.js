@@ -1,7 +1,7 @@
-import React from "react";
 import {Link} from "react-router-dom";
 
-export default function About(){
+export  default function AboutPage() {
+
     return(
         <>
             <section className="page-section bg-primary" id="about">

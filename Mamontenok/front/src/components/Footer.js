@@ -1,8 +1,7 @@
 import React from "react";
 
-class Footer extends React.Component{
+export default function Footer() {
 
-    render(){
         return(
             <>
                 <footer className="bg-light py-5">
@@ -13,5 +12,4 @@ class Footer extends React.Component{
             </>
         )
     }
-}
-export default Footer;
+
