@@ -17,6 +17,14 @@ app.use(cors())
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
+// Для работы с файлами
+let fileupload = require ("express-fileupload");
+app.use(
+    fileupload({
+        createParentPath: true,
+    }),
+);
+
 // Для работы с куками
 let cookieParser = require('cookie-parser');
 app.use(cookieParser());
@@ -28,9 +36,17 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Для работы с базой данных
 require("./config/mongo").connect();
 
+// Проверять всех входящих на ключ
+const authMiddleware = require('./auth/authMiddleware')
+app.use(authMiddleware)
+
 // Подключение маршрутов
-const auth = require('./routes/auth')
+const auth = require('./auth/authRoutes')
 app.use('/api/auth', auth)
 
-// Подготовка модуля к работе
+const ad = require('./olx/adRoutes')
+app.use('/api/ad', ad)
+
+
+
 module.exports = app;
