@@ -5,22 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="408240ff-b29a-4328-b769-c63870d7382c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/AboutPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/ContactPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Services.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back/auth/AuthController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../back/auth/AuthController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back/auth/authMiddleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/../back/auth/authMiddleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back/controllers/AuthController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back/middlewares/AuthMiddleware.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back/models/User.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back/olx/AdController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../back/olx/AdController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back/olx/adRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/../back/olx/adRoutes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back/routes/auth.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Contact.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Error404.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Portfolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Portfolio.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Services.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/auth/forms/ContactForm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/auth/forms/FormLogin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/auth/forms/FormLogin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/olx/AllAd.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/olx/AllAd.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +54,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Учеба/f12",
+    "last_opened_file_path": "D:/Учеба/homework/Mamontenok/front",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -108,6 +103,7 @@
       <workItem from="1660457226657" duration="1237000" />
       <workItem from="1661791260782" duration="243000" />
       <workItem from="1663873029268" duration="6250000" />
+      <workItem from="1664125860689" duration="918000" />
     </task>
     <servers />
   </component>
