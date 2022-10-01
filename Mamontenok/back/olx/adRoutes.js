@@ -9,5 +9,6 @@ router.get('/', adController.index)
 router.get('/:ad_id', adController.show)
 
 router.delete('/:ad_id', adController.delete)
+router.put('/:ad_id', adController.update)
 
 module.exports = router

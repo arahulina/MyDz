@@ -84,9 +84,14 @@ exports.show = function (request, response) {
 // ....
 
 exports.update = function (request, response) {
+    console.log("start edit")
+
     if(!request.user) {
         return response.status(401).json({message: "Вы не вошли в систему"})
     }
+
+
+    let findId = request.params.ad_id
 
     adModel.findById(findId, function(err, ad){
 
@@ -96,13 +101,19 @@ exports.update = function (request, response) {
         }
         else {
             // Если автор не совпадает - ошибка доступа
-            // console.log(ad.author_id.toString() + " " + request.user._id)
-            // console.log(typeof (ad.author_id) + " " + typeof (request.user._id))
             if (ad.author_id.toString() !== request.user._id ) {
-                return response.status(403).json({message: "У вас нет прав удалить объявление"})
+                return response.status(403).json({message: "У вас нет прав обновить объявление"})
             }
 
-            // ДЗ - Написать обновление записи
+           let bodyAd = request.body
+
+            ad.title = bodyAd.title
+            ad.message = bodyAd.message
+            ad.type = bodyAd.type
+            ad.price = bodyAd.price
+            ad.city = bodyAd.city
+            ad.location = bodyAd.location
+            ad.save()
 
             return response.status(204).send("Success!");
 

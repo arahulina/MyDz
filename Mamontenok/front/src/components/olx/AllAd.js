@@ -70,6 +70,37 @@ export default function AllAd(){
 
 
     }
+    const updateAd = function (ev) {
+        console.log("Start Edit")
+        console.log(ev.target.value)
+        let id = ev.target.value
+
+        fetch('http://localhost:3333/api' + '/ad/' + id,{
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json',
+                'authorization': localStorage.getItem('jwtToken')
+                // 'Content-Type': 'application/x-www-form-urlencoded',
+            }
+        })
+            .then(res => {
+                console.log(res)
+                console.log(res.status)
+                if(res.status === 204) {
+                    toast.success("Вы успешно обновили запись")
+                    loadAd()
+                    return
+                }
+                toast.error("Произошла ошибка обновления")
+
+            })
+            .catch(err=> {
+                console.log(err)
+                toast.error(err)
+            })
+
+
+    }
 
 
     useEffect(() => {
@@ -85,17 +116,17 @@ export default function AllAd(){
             <div> { user.name} </div>
             <ul>
                 {ads.map(ad => (
-                    <li key={ad._id}>
-                        <p>{ad.title}</p>
-                        { ad.author_id === user._id ? <p> <button> Edit </button> <button value={ad._id} onClick={deleteAd}> Delete </button>  </p> : " Не мое" }
-                        {/*<p>{ad.message}</p>*/}
-                        {/*<p>Цена {ad.price}$</p>*/}
-                        {/*<p>Город {ad.city}</p>*/}
-                        {/*<p>Район {ad.location}</p>*/}
+                    <li key={ad._id} className="d-flex">
+                        {<p>{ad.title}</p>}
+                        {<p>{ad.message}</p>}
+                        {<p>Цена {ad.price}$</p>}
+                        {<p>Город {ad.city}</p>}
+                        {<p>Район {ad.location}</p>}
+                        { ad.author_id === user._id ? <p> <button value={ad._id} onClick={updateAd}> Edit </button> <button value={ad._id} onClick={deleteAd}> Delete </button>  </p> : " Не мое" }
                     </li>
-                ))
-                }
+                ))}
             </ul>
+
         </>
     )
 }
