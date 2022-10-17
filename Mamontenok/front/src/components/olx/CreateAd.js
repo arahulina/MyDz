@@ -19,6 +19,7 @@ export default function CreateAd(){
     },[]);
 
 
+
     const formSchema = Yup.object().shape({
         title: Yup.string()
             .required("Заголовок обязательный")
@@ -35,7 +36,7 @@ export default function CreateAd(){
     })
 
     const formOptions = { resolver: yupResolver(formSchema) }
-    const { register, handleSubmit, formState } = useForm(formOptions)
+    const { register, handleSubmit, reset, formState } = useForm(formOptions)
     const { errors } = formState
 
     const onSubmit = function (data) {
@@ -94,6 +95,7 @@ export default function CreateAd(){
                     <label>Текст объявления</label>
                     <textarea
                         name="message"
+
                         {...register('message')}
                         className={`form-control ${errors.message ? 'is-invalid' : ''}`}
                     />

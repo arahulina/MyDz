@@ -6,21 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="408240ff-b29a-4328-b769-c63870d7382c" name="Changes" comment="CRUD without U">
       <change afterPath="$PROJECT_DIR$/../back/public/axios.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/olx/CreateAdPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../back/.env" beforeDir="false" afterPath="$PROJECT_DIR$/../back/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../back/controllers/AuthController.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../back/middlewares/AuthMiddleware.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../back/models/User.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../back/olx/AdController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../back/olx/AdController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../back/olx/adRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/../back/olx/adRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../back/routes/auth.js" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/olx/EditAd.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MyRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyRoutes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/olx/AllAd.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/olx/AllAd.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/olx/CreateAd.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/olx/CreateAd.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/olx/CreateAd.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/olx/OlxHomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/olx/OlxHomePage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +49,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Учеба/homework/Mamontenok/back",
+    "last_opened_file_path": "D:/Учеба/homework/Mamontenok/front",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -112,7 +102,10 @@
       <workItem from="1664215313796" duration="2362000" />
       <workItem from="1664379858963" duration="4036000" />
       <workItem from="1664482426718" duration="6143000" />
-      <workItem from="1664628066657" duration="610000" />
+      <workItem from="1664628066657" duration="2795000" />
+      <workItem from="1664994630977" duration="796000" />
+      <workItem from="1665248575839" duration="742000" />
+      <workItem from="1665832010647" duration="1245000" />
     </task>
     <task id="LOCAL-00001" summary="CRUD without U">
       <created>1664130708793</created>
