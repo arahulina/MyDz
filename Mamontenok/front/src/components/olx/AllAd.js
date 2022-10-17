@@ -8,7 +8,7 @@ export default function AllAd(){
     const [user, setUser] = useState({name: "гость", _id: 0}) // По умолчанию у нас гость
     // const [total, setTotal] = useState(null)
     const [page, setPage] = useState(1)
-    const [per_page, setPerPage] = useState(5)
+    const [per_page, setPerPage] = useState(2)
 
     let total = 0 // Формируем запись без стейта поскольку переменная статическая
 

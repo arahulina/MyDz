@@ -43,22 +43,99 @@ exports.create = function (request, response){
  * @param request
  * @param response
  */
-exports.index = function (request, response) {
+exports.index = async function (request, response) {
     console.log("Пришел за всеми объявлениями")
-    adModel.find({}, function(err, allAds){
+
+    // Данные для постраничного вывода объявлений
+
+    // Количество объявлений на страницу
+    let per_page = 2;
+    if (request.query.per_page !== undefined) per_page = request.query.per_page
+
+    // Текущая страница
+    let page = 1;
+    if (request.query.page !== undefined) page = request.query.page
+
+    console.log("Элементов на страницу: " + per_page)
+    console.log("Текущая страница: " + page)
+
+    let total = await adModel.count();
+    let allAds = await adModel.find({}).sort('created_at').skip((per_page*(page - 1))).limit(per_page);
+    let send = {
+        total: total, // Сколько всего в коллекции
+        page: page, // Какая сейчас страница открыта
+        per_page: per_page, // Сколько элементов на страницу
+        data: allAds // Сами элементы данной страницы
+    }
+
+    console.log(send)
+    return response.status(200).json(send);
+
+    // adModel.find({ skip: 0, limit: 2 }, function(err, allAds){
+    //
+    //     if(err) {
+    //         console.log("Ошибка в запросе все объявления")
+    //         console.log(err);
+    //         return response.status(404).json(err);
+    //     }
+    //     else {
+    //         // // ???? А видят ли все кто лайкнул ???
+    //         // for (i = 0; i < allAds.length; i++) {
+    //         //     if (allAds[i]['likeTotal'])
+    //         //         allAds[i]['likeTotal'] =allAds[i]['likes'].length
+    //         //     else
+    //         //         allAds[i]['likeTotal'] = 0
+    //         //     if (request.user) { // Если пользователь зарегистрирован
+    //         //         if ( allAds[i]['likes'].find(request.user._id))
+    //         //             allAds[i]['youLike'] = true
+    //         //         else
+    //         //             allAds[i]['youLike'] = false
+    //         //     }
+    //         // }
+    //
+    //
+    //         return response.status(200).json(allAds);
+    //     }
+    // });
+}
+
+/**
+ * ПОставить лайк
+ * @param request
+ * @param response
+ * @returns {*}
+ */
+exports.like = function (request, response) {
+    if(!request.user) {
+        return response.status(401).json({message: "Вы не вошли в систему"})
+    }
+
+    let findId = request.params.ad_id
+    let user_id = request.user._id
+
+    adModel.findById(findId, function(err, ad){
 
         if(err) {
-            console.log("Ошибка в запросе все объявления")
             console.log(err);
             return response.status(404).json(err);
         }
         else {
-            return response.status(200).json(allAds);
+            // Принимаю решение - а может ли лайкнуть этот пользователь ???
+
+            if (ad.likes.find(user_id)) {
+                // Этот пользователь лайкал это объявление
+                return response.status(202).json({"message": "U liked ad"});
+            }
+            else {
+                ad.likes.add(user_id)
+                adModel.updateOne(ad)
+                return response.status(201).json(ad)
+            }
+
         }
     });
+
 }
-
-
 /**
  * Вернуть конкретное объявление
  * Read (One) === GET
@@ -84,14 +161,9 @@ exports.show = function (request, response) {
 // ....
 
 exports.update = function (request, response) {
-    console.log("start edit")
-
     if(!request.user) {
         return response.status(401).json({message: "Вы не вошли в систему"})
     }
-
-
-    let findId = request.params.ad_id
 
     adModel.findById(findId, function(err, ad){
 
@@ -101,19 +173,13 @@ exports.update = function (request, response) {
         }
         else {
             // Если автор не совпадает - ошибка доступа
+            // console.log(ad.author_id.toString() + " " + request.user._id)
+            // console.log(typeof (ad.author_id) + " " + typeof (request.user._id))
             if (ad.author_id.toString() !== request.user._id ) {
-                return response.status(403).json({message: "У вас нет прав обновить объявление"})
+                return response.status(403).json({message: "У вас нет прав удалить объявление"})
             }
 
-           let bodyAd = request.body
-
-            ad.title = bodyAd.title
-            ad.message = bodyAd.message
-            ad.type = bodyAd.type
-            ad.price = bodyAd.price
-            ad.city = bodyAd.city
-            ad.location = bodyAd.location
-            ad.save()
+            // ДЗ - Написать обновление записи
 
             return response.status(204).send("Success!");
 
