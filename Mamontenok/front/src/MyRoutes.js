@@ -4,6 +4,7 @@ import Error404 from "./pages/Error404";
 import LoginPage from "./pages/auth/Login";
 import RegisterPage from "./pages/auth/Register";
 import OlxHomePage from "./pages/olx/OlxHomePage";
+import CardAllPage from "./pages/cards/CardAllPage";
 
 export default function MyRoutes() {
 
@@ -13,6 +14,7 @@ export default function MyRoutes() {
             <Route path="/login" element={<LoginPage></LoginPage>}></Route>
             <Route path="/register" element={<RegisterPage></RegisterPage>}></Route>
             <Route path="/olx" element={<OlxHomePage></OlxHomePage>}></Route>
+            <Route path="/cards" element={<CardAllPage></CardAllPage>}></Route>
             <Route path="*" element={<Error404></Error404>} />
         </Routes>
     )
