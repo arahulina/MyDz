@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #Universe {width: 100%;}
+        #dollyName {position: absolute; left: 0; top: 0; }
+        #dressDiv  {position: absolute;  }
+        .blueSuit {top:110px; left: 10px;}
+        .brownDress {top:110px; left: 10px;}
+        .fullBody {top:110px; left: 10px;}
+        .greenDress {top:110px; left: 10px;}
+        .lightGreenDress {top:110px; left: 10px;}
+        .orangeDress {top:110px; left: 10px;}
+
+        #closetDiv li {display: inline-block;}
+    </style>
+    <script src="https://cdn.socket.io/4.5.0/socket.io.min.js" integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="Universe">
+</div>
+
+<script src="dolly.js"></script>
+<script src="closet.js"></script>
+
+<script>
+    // Создаем активный сокет - и устанавливаем соединение
+    const socket = io("ws://localhost:3000");
+
+    // Куда я буду выводить свои сообщения
+    const dressDiv = document.getElementById('dressDiv')
+    // Моя реакция, когда с сервера сообщили о типе plus
+    socket.on('plus', (appleCount) => {
+        let li = document.createElement('li')
+        li.innerText = (new Date).toLocaleTimeString() + " Привезли яблок. Теперь их  " + appleCount
+        ul.appendChild(li)
+        document.getElementById('appleCount').value = appleCount
+    })
+    // С сервера пришла информация о событии типа minus
+    socket.on('minus', (appleCount) => {
+        let li = document.createElement('li')
+        li.innerText =  (new Date).toLocaleTimeString()  + " Только что купили яблоко. Теперь их " + appleCount
+        ul.appendChild(li)
+        document.getElementById('appleCount').value = appleCount
+    })
+
+    // Просто слушаем, что нам говорят
+    socket.on('message',  (appleCount) => {
+        console.log(appleCount)
+        document.getElementById('appleCount').value = appleCount
+    })
+
+    socket.on('incoming', (clientsCount) => {
+        let li = document.createElement('li')
+        li.innerText =  (new Date).toLocaleTimeString()
+            + " Только что кто то вошел в магазин. Теперь тут " + clientsCount
+        ul.appendChild(li)
+    })
+
+    // Крикнуть что я принес яблоко
+    document.getElementById('plus').onclick = () => {
+        // socket.send('plus') // тогда мое сообщение прийдет на сервер socket.on('message',
+        socket.emit('plus')
+    }
+
+    // Крикнуть что я забрал яблоко
+    document.getElementById('minus').onclick = () => {
+        // socket.send('minus') // тогда мое сообщение прийдет на сервер socket.on('message',
+        socket.emit('minus')
+    }
+
+</script>
+
+</body>
+</html>

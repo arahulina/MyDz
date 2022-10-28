@@ -5,12 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="408240ff-b29a-4328-b769-c63870d7382c" name="Changes" comment="CRUD without U">
-      <change afterPath="$PROJECT_DIR$/../back/public/axios.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/olx/EditAd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Dolly/.idea/Dolly.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Dolly/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Dolly/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Dolly/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Dolly/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Dolly/closet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Dolly/dolly.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Dolly/img/blueSuit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Dolly/img/brownDress.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Dolly/img/doll.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Dolly/img/fullBody.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Dolly/img/greenDress.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Dolly/img/hat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Dolly/img/lightGreenDress.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Dolly/img/orangeDress.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Dolly/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Dolly/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Dolly/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/olx/AllAd.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/olx/AllAd.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/olx/CreateAd.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/olx/CreateAd.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +62,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Учеба/homework/Mamontenok/front",
+    "last_opened_file_path": "D:/Учеба/WebstormProjects/socket30",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -106,6 +119,7 @@
       <workItem from="1664994630977" duration="796000" />
       <workItem from="1665248575839" duration="742000" />
       <workItem from="1665832010647" duration="1245000" />
+      <workItem from="1666523819513" duration="629000" />
     </task>
     <task id="LOCAL-00001" summary="CRUD without U">
       <created>1664130708793</created>
