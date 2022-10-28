@@ -1,8 +1,6 @@
 <template>
   <div>
-    <label>Введіть пароль
-      <input v-model="password.symbols">
-    </label>
+    <input v-model="password.symbols" placeholder="Введіть пароль">
     <p>{{validateAll.length}}</p>
     <hr>
     <p>{{validateAll.letters}}</p>
@@ -42,13 +40,9 @@ div {
   padding: 15px;
 }
 input {
-  margin: 5px;
+  margin: 5px 5px 5px 0;
   padding: 5px;
   border: 1px solid darkblue;
-}
-label {
-  font-style: italic;
-  color: blueviolet;
 }
 p {
   font-size: 12px;
