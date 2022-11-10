@@ -29,13 +29,21 @@
         font-size: 18px;
         margin-bottom: 0;
     }
+    button {
+        margin-left: 40px;
+    }
 
 </style>
 
 </head>
 <body>
-<aside id="filters">
+<aside >
+<div id="filters">
 
+</div>
+    <div>
+        <button type="reset" onclick=ResetFilters()>Скасувати фільтри</button>
+    </div>
 </aside>
 <main id="products">
 
@@ -299,6 +307,10 @@
         main.appendChild(ul)
     }
     renderProducts()
+
+    function ResetFilters() {
+
+    }
 
 </script>
 </body>

@@ -5,9 +5,9 @@
         <!-- Для формирования ссылки -->
         <li><router-link to="/">Go to Home</router-link></li>
         <li><router-link to="/about">Go to About</router-link></li>
+        <li><router-link to="/contact">Go to Contact</router-link></li>
       </ul>
     </nav>
-    <h2>Заголовок в обертке (Main)</h2>
     <!-- место вывода компонента по этой ссылке -->
     <router-view></router-view>
   </main>
@@ -16,13 +16,16 @@
 <script setup></script>
 
 <style scoped>
-h2 {
-  background: red;
-}
 header {
   line-height: 1.5;
 }
-
+nav {
+  display: flex;
+}
+li {
+  list-style-type: none;
+  color: #181818;
+}
 .logo {
   display: block;
   margin: 0 auto 2rem;
