@@ -6,6 +6,7 @@
         <li><router-link to="/">Go to Home</router-link></li>
         <li><router-link to="/about">Go to About</router-link></li>
         <li><router-link to="/contact">Go to Contact</router-link></li>
+        <li><router-link to="/todolist">Go to ToDoList</router-link></li>
       </ul>
     </nav>
     <!-- место вывода компонента по этой ссылке -->

@@ -23,6 +23,10 @@ const routes = [
     component: () => import("./components/pages/ContactPage.vue"),
   },
   {
+    path: "/todolist",
+    component: () => import("./components/pages/ToDoListPage.vue"),
+  },
+  {
     // Описание не существующего маршрута - для вывода ошибки 404
     path: "/:pathMatch(.*)*",
     component: () => import("./components/pages/ErrorPage.vue"),

@@ -1,6 +1,4 @@
-<template>
-  <h1>About page</h1>
-</template>
+<template></template>
 
 <script setup></script>
 
