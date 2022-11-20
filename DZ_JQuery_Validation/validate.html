@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        form label {
+            display: inline-block;
+            width: 100px;
+        }
+
+        form div {
+            margin-bottom: 10px;
+        }
+
+        .error {
+            color: red;
+            margin-left: 5px;
+        }
+
+        label.error {
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+<form id="first_form" method="post" action="">
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+    </div>
+    <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" />
+    </div>
+    <div>
+        <input type="submit" value="Submit" />
+    </div>
+</form>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+
+        $('#first_form').submit(function (e) {
+            let email = $('#email').val();
+            let password = $('#password').val();
+
+            $(".error").remove();
+
+            if (email.length < 1) {
+                $('#email').after('<span class="error">This field is required</span>');
+            } else {
+                let regEx = /^[A-Z0-9][A-Z0-9._%+-]{0,63}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/;
+                let validEmail = regEx.test(email);
+                if (!validEmail) {
+                    $('#email').after('<span class="error">Enter a valid email</span>');
+                }
+            }
+            if (password.length > 8
+                && password.match(/(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{8,}/g)) {
+                $('#password').after('<span class="error">Password must be at least 8 characters long</span>');
+            }
+
+
+        })
+    });
+</script>
+</body>
+</html>
