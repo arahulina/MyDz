@@ -56,11 +56,15 @@
                 let validEmail = regEx.test(email);
                 if (!validEmail) {
                     $('#email').after('<span class="error">Enter a valid email</span>');
+                } else {
+                    console.log ('Email is valid')
                 }
             }
             if (password.length > 8
                 && password.match(/(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{8,}/g)) {
                 $('#password').after('<span class="error">Password must be at least 8 characters long</span>');
+            } else {
+                console.log ('password is valid')
             }
 
 

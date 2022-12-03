@@ -1,68 +1,42 @@
-import FormRegistration from "../components/auth/forms/FormRegistration";
-import FormLogin from "../components/auth/forms/FormLogin";
-import FormEditUser from "../components/auth/forms/FormEditUser";
+import GoogleMap from "../components/googleMap/GoogleMap";
 
-export  default function ContactPage() {
+
+function ContactPage(){
 
     return(
         <>
-            <section className="contact-section bg-black" id="contact">
-                <div className="container px-4 px-lg-5">
-                    <div className="row gx-4 gx-lg-5">
-                        <div className="col-md-4 mb-3 mb-md-0">
-                            <div className="card py-4 h-100">
-                                <div className="card-body text-center">
-                                    <i className="fas fa-map-marked-alt text-primary mb-2"></i>
-                                    <h4 className="text-uppercase m-0">Address</h4>
-                                    <hr className="my-4 mx-auto"/>
-
-                                    <FormRegistration></FormRegistration>
-
-
-                                    <hr />
-                                    <div className="small text-black-50">4923 Market Street, Orlando FL</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-4 mb-3 mb-md-0">
-                            <div className="card py-4 h-100">
-                                <div className="card-body text-center">
-                                    <i className="fas fa-envelope text-primary mb-2"></i>
-                                    <h4 className="text-uppercase m-0">Email</h4>
-                                    <hr className="my-4 mx-auto"/>
-
-                                    <FormLogin></FormLogin>
-
-                                    <hr />
-
-                                    <div className="small text-black-50"><a href="#!">hello@yourdomain.com</a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-4 mb-3 mb-md-0">
-                            <div className="card py-4 h-100">
-                                <div className="card-body text-center">
-                                    <i className="fas fa-mobile-alt text-primary mb-2"></i>
-                                    <h4 className="text-uppercase m-0">Phone</h4>
-                                    <hr className="my-4 mx-auto"/>
-
-                                    <FormEditUser></FormEditUser>
-
-                                    <hr />
-
-                                    <div className="small text-black-50">+1 (555) 902-8832</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="social d-flex justify-content-center">
-                        <a className="mx-2" href="#!"><i className="fab fa-twitter"></i></a>
-                        <a className="mx-2" href="#!"><i className="fab fa-facebook-f"></i></a>
-                        <a className="mx-2" href="#!"><i className="fab fa-github"></i></a>
+            <div className="container-fluid">
+                <div>
+                    <p>Гаряча лінія готова допомогти Вам з 08.00 до 20.00, без вихідних: </p>
+                    <ul>
+                        <li>за номером +380...</li>
+                        <li>на email ...</li>
+                        <li>в direct Instagram ...</li>
+                    </ul>
+                </div>
+                <hr />
+                <div>
+                    Приєднуйтесь до нас в соціальних мережах:
+                    <ul>
+                        <li><a href=""><img src="" alt="Instagram"/></a></li>
+                        <li><a href=""><img src="" alt="Telegram"/></a></li>
+                    </ul>
+                </div>
+                <hr />
+                <div>
+                    <p>Завітайте до нашого шоуруму в м.Миколаєві:</p>
+                    <p>м.Миколаїв, вулиця 12-а Поздовжня, 51 (кут вулиці Космонавтів)</p>
+                    <p>Бізнес-центр Европа, 4 поверх, офіс 408</p>
+                    <p>Пн - Сб <span>10:00 - 17:00</span></p>
+                    <p>Нд <span>вихідний</span></p>
+                    <div>
+                        <GoogleMap></GoogleMap>
                     </div>
                 </div>
-            </section>
+            </div>
         </>
     )
 
 }
+
+export default ContactPage;

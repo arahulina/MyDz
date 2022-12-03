@@ -4,7 +4,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Navigation from "./components/Navigation";
 
 import {BrowserRouter, Routes, Route, useLocation} from "react-router-dom";
-import MyRoutes from "./MyRoutes";
+//import MyRoutes from "./MyRoutes";
 import {ToastContainer} from "react-toastify";
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
                 <Navigation></Navigation>
                 <div className="out container-fluid">
                     <div className="inner">
-                        <MyRoutes></MyRoutes>
+
                     </div>
                 </div>
             </BrowserRouter>
