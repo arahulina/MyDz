@@ -60,6 +60,7 @@ export default function FormRegistration () {
                 localStorage.setItem('jwtToken', data.token)
             })
             .catch(err=> {
+                //console.log(err)
                 toast.error("<h4>Произошла ошибка</h4>" + err.message())
             })
     }

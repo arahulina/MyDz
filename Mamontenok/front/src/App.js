@@ -10,7 +10,9 @@ import FavoritePage from "./pages/FavoritePage";
 import CartPage from "./pages/CartPage";
 import DeliveryPage from "./pages/DeliveryPage";
 import Error404 from "./pages/Error404";
-import Footer from "./pages/Footer";
+import Footer from "./components/footer/Footer";
+import RegistrationPage from "./pages/RegistrationPage";
+import AddProductPage from "./pages/AddProductPage";
 
 
 
@@ -25,9 +27,11 @@ function App() {
                     <Route path="/catalog" element={<CatalogPage></CatalogPage>} />
                     <Route path="/contact" element={<ContactPage></ContactPage>} />
                     <Route path="/login" element={<LoginPage></LoginPage>} />
+                    <Route path="/registration" element={<RegistrationPage></RegistrationPage>} />
                     <Route path="/favorite" element={<FavoritePage></FavoritePage>} />
                     <Route path="/cart" element={<CartPage></CartPage>} />
                     <Route path="/delivery" element={<DeliveryPage></DeliveryPage>} />
+                    <Route path="/add" element={<AddProductPage></AddProductPage>} />
                     <Route path="*" element={<Error404></Error404>} />
                 </Routes>
                 <Footer></Footer>

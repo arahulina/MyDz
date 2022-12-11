@@ -44,8 +44,8 @@ app.use(authMiddleware)
 const auth = require('./auth/authRoutes')
 app.use('/api/auth', auth)
 
-const product = require('./products/productsAdRoutes')
-app.use('/api/product', product)
+const ad = require('./products/productsAdRoutes')
+app.use('/api/ad', ad)
 
 
 

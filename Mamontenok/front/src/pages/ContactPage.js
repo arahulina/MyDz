@@ -1,4 +1,6 @@
 import GoogleMap from "../components/googleMap/GoogleMap";
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TelegramIcon from '@mui/icons-material/Telegram';
 
 
 function ContactPage(){
@@ -18,8 +20,8 @@ function ContactPage(){
                 <div>
                     Приєднуйтесь до нас в соціальних мережах:
                     <ul>
-                        <li><a href=""><img src="" alt="Instagram"/></a></li>
-                        <li><a href=""><img src="" alt="Telegram"/></a></li>
+                        <li className="contact_li"><a href=""><InstagramIcon/></a></li>
+                        <li><a href=""><TelegramIcon/></a></li>
                     </ul>
                 </div>
                 <hr />
@@ -27,7 +29,7 @@ function ContactPage(){
                     <p>Завітайте до нашого шоуруму в м.Миколаєві:</p>
                     <p>м.Миколаїв, вулиця 12-а Поздовжня, 51 (кут вулиці Космонавтів)</p>
                     <p>Бізнес-центр Европа, 4 поверх, офіс 408</p>
-                    <p>Пн - Сб <span>10:00 - 17:00</span></p>
+                    <p>Пн - Сб <span>11:00 - 16:00</span></p>
                     <p>Нд <span>вихідний</span></p>
                     <div>
                         <GoogleMap></GoogleMap>
