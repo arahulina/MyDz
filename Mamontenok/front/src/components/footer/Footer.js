@@ -19,9 +19,9 @@ export default function Footer() {
                 </div>
                 <div className="item">
                     <h1>Допомога</h1>
-                    <Link className="link" to="">Контакти</Link>
-                    <Link className="link" to="">Доставка та оплата</Link>
-                    <Link className="link" to="">Повернення</Link>
+                    <Link className="link" to="/contact">Контакти</Link>
+                    <Link className="link" to="/delivery">Доставка та оплата</Link>
+                    <Link className="link" to="/delivery">Повернення</Link>
                 </div>
                 <div className="item">
                     <div className="item_block">

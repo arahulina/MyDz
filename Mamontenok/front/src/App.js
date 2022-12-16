@@ -1,4 +1,5 @@
 import 'react-toastify/dist/ReactToastify.css';
+import "./app.scss"
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Navigation from "./components/navigation/Navigation";
 import HomePage from "./pages/HomePage";
@@ -13,6 +14,7 @@ import Error404 from "./pages/Error404";
 import Footer from "./components/footer/Footer";
 import RegistrationPage from "./pages/RegistrationPage";
 import AddProductPage from "./pages/AddProductPage";
+import SingleProduct from "./components/products/SingleProduct";
 
 
 
@@ -25,6 +27,7 @@ function App() {
                     <Route path="/" element={<HomePage></HomePage>} />
                     <Route path="/about" element={<AboutPage></AboutPage>} />
                     <Route path="/catalog" element={<CatalogPage></CatalogPage>} />
+                    <Route path="/product" element={<SingleProduct></SingleProduct>} />
                     <Route path="/contact" element={<ContactPage></ContactPage>} />
                     <Route path="/login" element={<LoginPage></LoginPage>} />
                     <Route path="/registration" element={<RegistrationPage></RegistrationPage>} />

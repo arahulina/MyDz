@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+
+  li {
+    list-style-type: none;
+    text-decoration: none;
+  }
+
+  .catalog_left, .filter_categories {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+  }
+  .list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}

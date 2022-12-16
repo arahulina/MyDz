@@ -3,11 +3,14 @@ import {toast} from "react-toastify";
 
 export default function AllProduct(){
 
+    
+
+
     const [products, setProducts] = useState([])
     const [user, setUser] = useState({name: "гость", _id: 0}) // По умолчанию у нас гость
     // const [total, setTotal] = useState(null)
     const [page, setPage] = useState(1)
-    const [per_page, setPerPage] = useState(2)
+    const [per_page, setPerPage] = useState(10)
 
     let total = 0 // Формируем запись без стейта поскольку переменная статическая
 
@@ -138,19 +141,20 @@ export default function AllProduct(){
 
     return (
         <div>
-
             <ul>
                 {products.map(product => (
                     <li key={product._id}>
-                        <p>{product.title}</p>
-                        <p>{product.description}</p>
-                        <p>{product.price}</p>
+                            <p>{product.title}</p>
+                            <p>{product.description}</p>
+                            <p>{product.price} грн</p>
                     </li>
-                ))
-                }
+                ))}
             </ul>
-            <div> Page {page} Total: {total} </div>
-            <div onClick={loadMore}> Загрузить дальше </div>
+
+
         </div>
     )
 }
+
+// <div> Page {page} Total: {total} </div>
+// <div onClick={loadMore}> Загрузить дальше </div>

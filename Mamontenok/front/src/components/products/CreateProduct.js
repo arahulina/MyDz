@@ -16,6 +16,9 @@ export default function CreateProduct(){
         if(localStorage.getItem('jwtToken') === null) {
             return navigate("/login");
         }
+        let user = JSON.stringify(localStorage.getItem('user'))
+        if (user.role !== 'admin')
+            return navigate("/login")
     },[]);
 
 
@@ -89,7 +92,7 @@ export default function CreateProduct(){
                     <textarea
                         name="description"
 
-                        {...register('message')}
+                        {...register('description')}
                         className={`form-control ${errors.description ? 'is-invalid' : ''}`}
                     />
 
