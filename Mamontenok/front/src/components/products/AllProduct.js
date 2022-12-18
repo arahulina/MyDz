@@ -1,10 +1,15 @@
 import {useEffect, useState} from "react";
-import {toast} from "react-toastify";
+import "./AllProduct.scss";
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 
 export default function AllProduct(){
-
-    
-
 
     const [products, setProducts] = useState([])
     const [user, setUser] = useState({name: "гость", _id: 0}) // По умолчанию у нас гость
@@ -15,43 +20,37 @@ export default function AllProduct(){
     let total = 0 // Формируем запись без стейта поскольку переменная статическая
 
     const loadProduct = function () {
-        // toast.error('?page=' + page + "&per_page=" + per_page)
         fetch('http://localhost:3333/api'
             + '/product?page=' + page + "&per_page=" + per_page  ,{
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
                 'authorization': localStorage.getItem('jwtToken')
-                // 'Content-Type': 'application/x-www-form-urlencoded',
             }
         })
             .then(res => {
-                // console.log(res)
                 if(res.status !==200) {
-                    toast.error("Ошибка")
                     return null
                 }
                 return res.json()
             })
             .then(data => {
                 if(data === null) {
-                    console.log("Я ничего не делаю")
+                    //console.log("Я ничего не делаю")
                     return
                 }
-                // toast.success("Вы успешно получили объявления")
                 console.log(data)
                 total = data.total // Всего объявлений
 
                 setProducts(products.concat(data.data))
 
-                console.log(total)
+                //console.log(total)
                 document.body.onscroll = function () {
                     scrollPos()
                 }
             })
             .catch(err=> {
                 console.log(err)
-                toast.error(err)
             })
     }
 
@@ -65,23 +64,16 @@ export default function AllProduct(){
             headers: {
                 'Content-Type': 'application/json',
                 'authorization': localStorage.getItem('jwtToken')
-                // 'Content-Type': 'application/x-www-form-urlencoded',
             }
         })
             .then(res => {
                 console.log(res)
                 console.log(res.status)
                 if(res.status === 204) {
-                    toast.success(" Вы успешно удалили запись")
                     loadProduct()
-                    return
-                }
-                toast.error(" Произошла ошибка удаления ")
-
-            })
+                }})
             .catch(err=> {
                 console.log(err)
-                toast.error(err)
             })
 
 
@@ -103,7 +95,6 @@ export default function AllProduct(){
 
     const loadMore = function () {
         if (page * per_page > total) {
-            toast.info(" Вы достигли дна" + page + " " +  per_page + " " + total)
             return
         }
         setPage(page+1)
@@ -126,34 +117,42 @@ export default function AllProduct(){
 
         // Отслеживаем, где находится низ экрана относительно страницы:
         const position = scrolled + screenHeight
-        console.log("Scrolled " + scrolled)
-        console.log("Position " + position)
-        console.log( "hold " + threshold)
+        //console.log("Scrolled " + scrolled)
+        //console.log("Position " + position)
+        //console.log( "hold " + threshold)
 
         if (position >= threshold) {
             document.body.onscroll = null
-            toast.info("Load More " + page)
             loadMore()
         }
     }
 
-
     return (
-        <div>
-            <ul>
-                {products.map(product => (
-                    <li key={product._id}>
-                            <p>{product.title}</p>
-                            <p>{product.description}</p>
-                            <p>{product.price} грн</p>
-                    </li>
-                ))}
-            </ul>
-
-
+        <div className="list">
+            {products.map(product => (
+                <div key={product._id} className="card">
+                    <div className="cardImage">
+                        <img src={product.img} alt={product.title} />
+                    </div>
+                    <div className="details">
+                        <h2>{product.title}</h2>
+                        <span>{product.description}</span>
+                        <p>{product.price} грн</p>
+                    </div>
+                    <div className="btnCard">
+                        <button className="btnCartAdd">
+                            Додати у корзину
+                            <ShoppingCartOutlinedIcon style={{ fontSize: 20, marginTop: 6 }}/>
+                        </button>
+                        <button className="btnCartAdd">
+                            Додати у спиcок бажань
+                            <FavoriteBorderOutlinedIcon style={{ fontSize: 20, marginTop: 6 }}/>
+                        </button>
+                    </div>
+                </div>
+            ))}
         </div>
-    )
-}
+    )}
 
 // <div> Page {page} Total: {total} </div>
 // <div onClick={loadMore}> Загрузить дальше </div>

@@ -84,7 +84,7 @@ function CatalogPage(){
                         </div>
                     </div>
                 </div>
-                <div className="list">
+                <div className="catalog_right">
                     <AllProduct productId={productId} maxPrice={maxPrice} sort={sort} subCats={selectedSubCats}/>
                 </div>
             </div>
