@@ -8,7 +8,7 @@ const Categories = () => {
             <div className="col">
                 <div className="row">
                     <img
-                        src="https://pixabay.com/get/g37947c38aa11456b16bb134b64f688aaea66b949adf55536328c727dbdf5c3aea4882aa52b81474075765d62eaab48cf03c24a5b0de57f4b292a06c8abfc36b5_1920.png"
+                        src="https://pixabay.com/get/g71a0b2eb3e161610343d580ea5159531ac48f5502f7a95a84bb768e9819e8e3113e41299752fef60eafd24d3025717c4_640.jpg"
                         alt=""
                     />
                     <button>
@@ -19,7 +19,7 @@ const Categories = () => {
                 </div>
                 <div className="row">
                     <img
-                        src="https://pixabay.com/get/g54062fce3cc479def08ebe6cb56d89221c69b97144a2d0ae64dff8f09a048798eb467a7875630302ea0b8e696d30d0f813c90a4d00fbf8e34d0b0672fe6511d4_1920.jpg"
+                        src="https://pixabay.com/get/ga2363e4a4aa6edeb1c4566144479002fe47c4dddf2b3c3c10540cbb13ea4541964af482246f018c02c552b69d6ee8bcd_640.jpg"
                         alt=""
                     />
                     <button>
@@ -33,7 +33,7 @@ const Categories = () => {
                 <div className="row">
                     {" "}
                     <img
-                        src="https://pixabay.com/get/g449d7b47b937b4a15c3aee845d74ca1c4976114fcfa3f2d24b22a196b5c989cd3f75348eb8e5555210f7f0da94fb7e5e6b5d2a4ad97768fe92ca40dde05f42c8_1920.jpg"
+                        src="https://pixabay.com/get/g240cef40f7cb0eb374e791d728b4f362e79a9b927863d2b7c661699668a7a2ee53463fdddd7460ceb3c1b02840ba4b53_640.jpg"
                         alt=""
                     />
                     <button>
@@ -48,7 +48,7 @@ const Categories = () => {
                     <div className="col">
                         <div className="row">
                             <img
-                                src="https://pixabay.com/get/g2d229e9a007fee72d10a158604488ed09fabfdced5c12ea3914b52b5f7c9848149061b1a240ffc23e5627ad57a012900f250d36daa8c38549f95c9bd4b7d7e5b_1920.jpg"
+                                src="https://pixabay.com/get/gd07ed64f719b315e7bcd8a6d2df72b40a003ec79fc52beb5b78db3ce880706c435393618d11eb97b90999b1deba406d5_640.jpg"
                                 alt=""
                             />
                             <button>
@@ -62,7 +62,7 @@ const Categories = () => {
                         <div className="row">
                             {" "}
                             <img
-                                src="https://pixabay.com/get/g769d460666a945d91a186e324aa84ed40217c46cec0043905aa0f50a666e93bb08ebaaa8c995dd251487647d42be5fed1332238846e159d3d1ac84ffdf427115_1920.jpg"
+                                src="https://pixabay.com/get/g1808debf448c600926476f43e323ab06a9ac103e7dbea273e4af1cb00d0d459d1c5e1e761ceeb2b9958cb3863788b504_640.jpg"
                                 alt=""
                             />
                             <button>
@@ -75,7 +75,7 @@ const Categories = () => {
                 </div>
                 <div className="row">
                     <img
-                        src="https://pixabay.com/get/g74c2091ddef515f8d5843f1aae2d18b9dc06c49b724cf52f7cbde80e1897c553767d32ee364669cd7c365c8bd5c45115d2728566459eb0dedf699a727beb2262_1920.jpg"
+                        src="https://pixabay.com/get/g6d6ac7ad951cc0b9e92238b1c82e37ce384baff2feccf7986be8cd5bc358ff1b61dbf003cd34d25d25e26b3790de3a16_640.jpg"
                         alt=""
                     />
                     <button>

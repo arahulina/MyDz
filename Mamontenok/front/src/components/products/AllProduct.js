@@ -92,8 +92,7 @@ export default function AllProduct(){
         loadProduct()
         if ( localStorage.getItem('user') ){ // Если есть данные по пользователю - восстановить их
             setUser(JSON.parse (localStorage.getItem('user')))
-        }
-    }, [])
+        }}, [])
 
 
 

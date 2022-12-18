@@ -1,14 +1,17 @@
-import React from "react";
+import React, {useState} from "react";
 import SearchIcon from "@mui/icons-material/Search";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import { Link } from "react-router-dom";
-import "./Navigation.scss"
-//import Cart from "../Cart/Cart";
+import "./Navigation.scss";
+import Cart from "./../products/Cart";
 //import { useSelector } from "react-redux";
 
 const Navigation = () => {
+
+    const [open, setOpen] = useState(false)
+
     return (
         <div className="navbar">
             <div className="wrapper">
@@ -17,11 +20,14 @@ const Navigation = () => {
                         <Link className ="link" to="/catalog">Каталог товарів</Link>
                     </div>
                     <div className="item">
+                        <SearchIcon style={{ fontSize: 40 }}/>
+                    </div>
+                    <div className="item">
                         <Link className ="link" to="/add">Додати товар</Link>
                     </div>
                 </div>
                 <div className="center">
-                    <Link className ="link" to="/">МАМОНТЕНОК</Link>
+                    <Link className ="link" to="/">MAMONTENOK</Link>
                 </div>
                 <div className="right">
                     <div className="item">
@@ -37,18 +43,15 @@ const Navigation = () => {
                         <div className="item">
                             <Link className ="link" to="/favorite"><FavoriteBorderOutlinedIcon style={{ fontSize: 40 }}/></Link>
                         </div>
-                        <div className="item">
-                            <SearchIcon style={{ fontSize: 40 }}/>
-                        </div>
-                        <div className="cartIcon item">
-                            <Link className="link" to="/cart">
+
+                        <div className="cartIcon item" onClick={() => setOpen(!open)}>
                                 <ShoppingCartOutlinedIcon style={{ fontSize: 40 }}/>
                                 <span>0</span>
-                            </Link>
                         </div>
                     </div>
                 </div>
             </div>
+            {open && <Cart/>}
         </div>
     );
 };

@@ -8,7 +8,6 @@ import CatalogPage from "./pages/CatalogPage";
 import ContactPage from "./pages/ContactPage";
 import LoginPage from "./pages/LoginPage";
 import FavoritePage from "./pages/FavoritePage";
-import CartPage from "./pages/CartPage";
 import DeliveryPage from "./pages/DeliveryPage";
 import Error404 from "./pages/Error404";
 import Footer from "./components/footer/Footer";
@@ -32,7 +31,6 @@ function App() {
                     <Route path="/login" element={<LoginPage></LoginPage>} />
                     <Route path="/registration" element={<RegistrationPage></RegistrationPage>} />
                     <Route path="/favorite" element={<FavoritePage></FavoritePage>} />
-                    <Route path="/cart" element={<CartPage></CartPage>} />
                     <Route path="/delivery" element={<DeliveryPage></DeliveryPage>} />
                     <Route path="/add" element={<AddProductPage></AddProductPage>} />
                     <Route path="*" element={<Error404></Error404>} />

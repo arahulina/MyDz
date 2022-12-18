@@ -8,9 +8,9 @@ export default function Slider() {
     const [currentSlide, setCurrentSlide] = useState(0);
 
     const data = [
-        "https://pixabay.com/get/gc0942c668edee8e99fc237e6b04925d277851d9b93fa05b7c4ff878c3f7777e3b5691f38617a39980ddc3d5414134f25_1920.jpg",
-        "https://pixabay.com/get/g4b3523e337730b60cf0702c58e8196c340b847e9bd219f1fe0aaff81a8c9cdb114efa420edcedf722e504de9d96cfa5a_1920.jpg",
-        "https://pixabay.com/get/gcf91e3a896a2f634afd3b57a7c71be7a8b3ff44f9b4e837d32518cc6ec2d61d3f507fc17dfa2182bcf908f01858732c2de41f58798517abf4a0d461e5d321d3b_1920.jpg",
+        "https://pixabay.com/get/ge0ab68770654f20b446fc155512e6de735cdcfc253aefdc94094dc4fe3e49aec4fd42fe1c23c8ce3328c28f513dc8ec3_640.jpg",
+        "https://pixabay.com/get/g7c43188c598d974740a76049bbea471f38f353ce1ae881c05bb13501aa1d746fd5ea86564a7bb32cf021a5d73664019d_640.jpg",
+        "https://pixabay.com/get/g65280b5bb2fce1ad3990f54ff734bee29965e3e010a26c6aa5b97006a64a5bfbfcc0317752d641ef96f391f8524874d8_640.jpg",
     ];
 
     const prevSlide = () => {
