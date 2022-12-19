@@ -6,8 +6,12 @@ import "./SingleProduct.scss"
 
 function SingleProduct(){
 
+    const images = [
+        "https://images.pexels.com/photos/818992/pexels-photo-818992.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        "https://images.pexels.com/photos/2036646/pexels-photo-2036646.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    ]
 
-    //const [selectedImg, setSelectedImg] = useState("img");
+    const [selectedImg, setSelectedImg] = useState(0);
     const [quantity, setQuantity] = useState(1);
 
     return(
@@ -15,11 +19,17 @@ function SingleProduct(){
             <div className="product_container">
                 <div className="left">
                     <div className="images">
-                        <img src="https://images.pexels.com/photos/818992/pexels-photo-818992.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Фото 1" />
-                        <img src="https://images.pexels.com/photos/2036646/pexels-photo-2036646.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Фото 2" />
+                        <img src={images[0]}
+                             alt="Фото 1"
+                             onClick={(e) => setSelectedImg(0)}
+                        />
+                        <img src={images[1]}
+                             alt="Фото 2"
+                             onClick={(e) => setSelectedImg(1)}
+                        />
                     </div>
                     <div className="mainImg">
-                        <img src="https://images.pexels.com/photos/1813947/pexels-photo-1813947.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Велике фото" />
+                        <img src={images[selectedImg]} alt="Велике фото" />
                     </div>
                 </div>
                 <div className="right">
