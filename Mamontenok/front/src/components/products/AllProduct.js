@@ -48,38 +48,12 @@ export default function AllProduct(){
             })
     }
 
-    const deleteProduct = function (ev) {
-        console.log("Start Del")
-        console.log(ev.target.value)
-        let id = ev.target.value
-
-        fetch('http://localhost:3333/api' + '/product/' + id,{
-            method: 'DELETE',
-            headers: {
-                'Content-Type': 'application/json',
-                'authorization': localStorage.getItem('jwtToken')
-            }
-        })
-            .then(res => {
-                console.log(res)
-                console.log(res.status)
-                if(res.status === 204) {
-                    loadProduct()
-                }})
-            .catch(err=> {
-                console.log(err)
-            })
-
-
-    }
-
 
     useEffect(() => {
         loadProduct()
         if ( localStorage.getItem('user') ){ // Если есть данные по пользователю - восстановить их
             setUser(JSON.parse (localStorage.getItem('user')))
         }}, [])
-
 
 
     useEffect(() => {
@@ -111,9 +85,6 @@ export default function AllProduct(){
 
         // Отслеживаем, где находится низ экрана относительно страницы:
         const position = scrolled + screenHeight
-        //console.log("Scrolled " + scrolled)
-        //console.log("Position " + position)
-        //console.log( "hold " + threshold)
 
         if (position >= threshold) {
             document.body.onscroll = null

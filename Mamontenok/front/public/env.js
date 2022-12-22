@@ -1,6 +1,5 @@
 window.env = {
   "ALLUSERSPROFILE": "C:\\ProgramData",
-  "API_URL": "http://localhost:3333/api",
   "APPDATA": "C:\\Users\\HP\\AppData\\Roaming",
   "COLOR": "1",
   "CommonProgramFiles": "C:\\Program Files\\Common Files",

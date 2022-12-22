@@ -1,6 +1,6 @@
 import DeleteOutlineOutlinedIcon from '@mui/icons-material/DeleteOutlineOutlined';
-import Button from "@mui/material/Button";
 import "./Cart.scss"
+import { Button} from 'react-bootstrap';
 
 const Cart = () => {
 
@@ -24,7 +24,6 @@ const Cart = () => {
     ]
 
 
-
     const totalPrice = () => {
         let total = 0;
         products.forEach((product) => {
@@ -37,7 +36,7 @@ const Cart = () => {
         <>
             <div className="cart">
                 <h1>Товари у корзині</h1>
-                {products?.map((product) => (
+                {products.map((product) => (
                     <div className="item" key={product.id}>
                         <img src={product.img} alt="" />
                         <div className="details">

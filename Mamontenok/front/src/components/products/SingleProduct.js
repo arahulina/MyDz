@@ -1,10 +1,11 @@
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import {Link} from "react-router-dom"
 import "./SingleProduct.scss"
 
-function SingleProduct(){
+
+function SingleProduct (){
 
     const images = [
         "https://images.pexels.com/photos/818992/pexels-photo-818992.jpeg?auto=compress&cs=tinysrgb&w=1600",

@@ -17,6 +17,7 @@ import SingleProduct from "./components/products/SingleProduct";
 
 
 
+
 function App() {
     return (
         <>
@@ -32,6 +33,7 @@ function App() {
                     <Route path="/registration" element={<RegistrationPage></RegistrationPage>} />
                     <Route path="/favorite" element={<FavoritePage></FavoritePage>} />
                     <Route path="/delivery" element={<DeliveryPage></DeliveryPage>} />
+
                     <Route path="/add" element={<AddProductPage></AddProductPage>} />
                     <Route path="*" element={<Error404></Error404>} />
                 </Routes>

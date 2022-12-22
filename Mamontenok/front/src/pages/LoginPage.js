@@ -5,14 +5,20 @@ function LoginPage(){
 
     return(
         <>
-            <section>
-                <div>
-                    <FormLogin></FormLogin>
+            <section className="profile">
+                <div className="left">
+                    <div>
+                        <FormLogin></FormLogin>
+                    </div>
+                    <div>
+                        <p>У Вас немає акаунта?</p>
+                        <button type="button"><Link to="/registration">Зареєструватися</Link></button>
+                    </div>
                 </div>
-                <div>
-                    <p>У Вас немає акаунта?</p>
-                    <button type="button"><Link to="/registration">Зареєструватися</Link></button>
+                <div className="right">
+
                 </div>
+
             </section>
         </>
     )

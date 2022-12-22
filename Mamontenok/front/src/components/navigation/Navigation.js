@@ -6,6 +6,7 @@ import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import { Link } from "react-router-dom";
 import "./Navigation.scss";
 import Cart from "./../products/Cart";
+
 //import { useSelector } from "react-redux";
 
 const Navigation = () => {
@@ -43,11 +44,12 @@ const Navigation = () => {
                         <div className="item">
                             <Link className ="link" to="/favorite"><FavoriteBorderOutlinedIcon style={{ fontSize: 40 }}/></Link>
                         </div>
-
-                        <div className="cartIcon item" onClick={() => setOpen(!open)}>
+                        <Link to="">
+                            <div className="cartIcon item" onClick={() => setOpen(!open)}>
                                 <ShoppingCartOutlinedIcon style={{ fontSize: 40 }}/>
                                 <span>0</span>
-                        </div>
+                            </div>
+                        </Link>
                     </div>
                 </div>
             </div>
